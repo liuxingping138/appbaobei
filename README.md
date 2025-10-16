@@ -1,125 +1,125 @@
-# Family Growth Moments - WeChat Mini Program
+# 家庭成长时光 - 微信小程序
 
-## Project Overview
+## 项目概述
 
-This WeChat Mini Program is designed to help families document and share their child's growth moments. It provides a platform for all family members to participate in recording precious moments of the child's development.
+这款微信小程序旨在帮助家庭记录和分享孩子的成长时光。它为所有家庭成员提供了一个平台，共同参与记录孩子成长的珍贵时刻。
 
-## Features
+## 功能特性
 
-1. **Family Circle** - Similar to WeChat Moments, allowing family members to share photos and videos
-2. **Baby Profile Management** - Track baby's basic information, health, and interests
-3. **Growth Assessment** - Visualize development with radar charts
-4. **Family Travel Footprint** - Record and display family trips on a map
-5. **Time Machine** - Auto-generated weekly/monthly videos of the child's growth
-6. **Family Group Chat** - Real-time communication among family members
-7. **Growth Reports** - Export comprehensive growth reports
+1. **家庭圈** - 类似微信朋友圈，允许家庭成员分享照片和视频
+2. **宝宝档案管理** - 跟踪宝宝的基本信息、健康状况和兴趣爱好
+3. **成长评估** - 使用雷达图可视化发展情况
+4. **家庭旅行足迹** - 在地图上记录和展示家庭旅行
+5. **时光机** - 自动生成孩子成长的周/月视频
+6. **家庭群聊** - 家庭成员之间的实时沟通
+7. **成长报告** - 导出全面的成长报告
 
-## Technical Architecture
+## 技术架构
 
-- **Frontend**: WeChat Mini Program native framework
-- **UI Components**: weui-miniprogram
-- **Backend**: WeChat Cloud Development (CloudBase)
-- **Database**: Cloud database for storing user data, baby information, moments, etc.
-- **Cloud Functions**: Serverless functions for business logic
-- **Cloud Storage**: For storing media files (photos, videos)
+- **前端**: 微信小程序原生框架
+- **UI组件**: weui-miniprogram
+- **后端**: 微信云开发 (CloudBase)
+- **数据库**: 云数据库用于存储用户数据、宝宝信息、动态等
+- **云函数**: 无服务器函数处理业务逻辑
+- **云存储**: 用于存储媒体文件（照片、视频）
 
-## Project Structure
+## 项目结构
 
 ```
 appbaby/
-├── frontend/              # Frontend code
-│   ├── components/        # Reusable components
-│   ├── pages/             # Page files
-│   ├── utils/             # Utility functions
-│   ├── test/              # Test files
-│   ├── app.js             # App entry point
-│   ├── app.json           # App configuration
-│   └── sitemap.json       # Sitemap configuration
-├── backend/               # Backend services
-│   ├── cloudfunctions/    # Cloud functions
-│   ├── database/          # Database models and initialization
-│   ├── services/          # Business logic services
-│   └── utils/             # Backend utility functions
-├── requirements.md        # Detailed requirements document
-└── README.md              # This file
+├── frontend/              # 前端代码
+│   ├── components/        # 可复用组件
+│   ├── pages/             # 页面文件
+│   ├── utils/             # 工具函数
+│   ├── test/              # 测试文件
+│   ├── app.js             # 应用入口点
+│   ├── app.json           # 应用配置
+│   └── sitemap.json       # 网站地图配置
+├── backend/               # 后端服务
+│   ├── cloudfunctions/    # 云函数
+│   ├── database/          # 数据库模型和初始化
+│   ├── services/          # 业务逻辑服务
+│   └── utils/             # 后端工具函数
+├── requirements.md        # 详细需求文档
+└── README.md              # 本文件
 ```
 
-## Getting Started
+## 开始使用
 
-### Prerequisites
+### 前提条件
 
-- WeChat Developer Tool
-- Node.js (for development dependencies)
-- WeChat Account with Mini Program permissions
+- 微信开发者工具
+- Node.js (用于开发依赖)
+- 拥有小程序权限的微信账号
 
-### Installation
+### 安装
 
-1. Clone the repository:
+1. 克隆仓库:
    ```bash
    git clone https://github.com/liuxingping138/appbaobei
    ```
 
-2. Open the project in WeChat Developer Tool:
-   - Open the `frontend` directory as a Mini Program project
-   - Configure the AppID in `app.json`
+2. 在微信开发者工具中打开项目:
+   - 将 `frontend` 目录作为小程序项目打开
+   - 在 `app.json` 中配置 AppID
 
-3. Install dependencies for frontend:
+3. 安装前端依赖:
    ```bash
    cd frontend
    npm install
    ```
 
-4. Install dependencies for backend:
+4. 安装后端依赖:
    ```bash
    cd backend
    npm install
    ```
 
-5. Set up cloud development:
-   - Create a cloud development environment in WeChat Developer Tool
-   - Update the environment ID in `app.js`
+5. 设置云开发:
+   - 在微信开发者工具中创建云开发环境
+   - 在 `app.js` 中更新环境ID
 
-### Deployment
+### 部署
 
-1. Upload the frontend code using WeChat Developer Tool
-2. Deploy cloud functions:
-   - Navigate to the `backend` directory
-   - Deploy cloud functions through WeChat Developer Tool
-3. Initialize the database:
-   - Run the database initialization script in the cloud environment
+1. 使用微信开发者工具上传前端代码
+2. 部署云函数:
+   - 导航到 `backend` 目录
+   - 通过微信开发者工具部署云函数
+3. 初始化数据库:
+   - 在云环境中运行数据库初始化脚本
 
-## Development Guidelines
+## 开发指南
 
-### Code Structure
+### 代码结构
 
-- Follow component-based development for reusable UI elements
-- Use async/await for cloud function calls
-- Implement error handling for all user interactions
-- Maintain consistent styling with weui-miniprogram components
+- 遵循组件化开发以实现可复用的UI元素
+- 使用 async/await 进行云函数调用
+- 为所有用户交互实现错误处理
+- 使用 weui-miniprogram 组件保持一致的样式
 
-### Testing
+### 测试
 
-- Test on different device sizes
-- Verify accessibility for elderly family members
-- Ensure smooth performance on low-end devices
-- Test all user flows with different user roles
+- 在不同设备尺寸上测试
+- 验证老年人家庭成员的可访问性
+- 确保在低端设备上的流畅性能
+- 使用不同用户角色测试所有用户流程
 
-## Contributing
+## 贡献
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+1. Fork 仓库
+2. 创建功能分支
+3. 提交您的更改
+4. 推送到分支
+5. 创建 Pull Request
 
-## GitHub Repository
+## GitHub 仓库
 
-The source code for this project is available at: https://github.com/liuxingping138/appbaobei
+该项目的源代码位于: https://github.com/liuxingping138/appbaobei
 
-## License
+## 许可证
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+该项目根据 MIT 许可证授权 - 有关详细信息，请参见 LICENSE 文件。
 
-## Contact
+## 联系方式
 
-For support or queries, please contact the development team.
+如需支持或查询，请联系开发团队。

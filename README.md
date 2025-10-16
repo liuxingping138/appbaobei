@@ -56,7 +56,7 @@ appbaby/
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/liuxingping138/appbaobei
    ```
 
 2. Open the project in WeChat Developer Tool:
@@ -111,6 +111,10 @@ appbaby/
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
+
+## GitHub Repository
+
+The source code for this project is available at: https://github.com/liuxingping138/appbaobei
 
 ## License
 
